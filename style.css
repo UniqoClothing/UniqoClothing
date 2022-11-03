@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/*Font importada de 'google fonts'*/
+
+/*ASPECTES GENERALS DEL DISSENY DE LA WEB*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Creació de capses*/
+}
+.logo{
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 10%;
+    /*Edició del tamany i pocisió de la imatge de marca*/
+}
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: whitesmoke;
+
+    /* Color del text en cas que el curosr s'hi pose per damunt */
+}
+ul {
+    list-style: none;
+
+    /* Per tal que la llista que hem creat per al menu no hi hagen
+    elements de llista */
+}
+
+
+body , html {
+    overflow-x: hidden;
+
+    /* Aquest parametre fa que la "X" desparega mentres estiga
+    amb dimensions de pantalla d'ordenador */
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+
+    /* Edició específica del menu de la web: espais, posicions, ... */
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+
+     /* Edició dels links del menu de la web*/
+}
+.nav-links li {
+    margin: 0 30px;
+
+    /* Marge corresponent del menu */
+}
+
+/* PRIMER CONTINGUT DE LA WEB*/
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/header-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    
+     /* Edició de la capaçalera i part introductoria de la web de la web */
+}
+
+.header-content {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 150px;
+    color: #eee2df; 
+    text-align: center;
+
+    /* Edició del contingut del header: color, aliniació del text i marges */ 
+}
+.header-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vmin;
+
+    /* Tamany del text "Little Changes Can Save Our World" */
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: #c2c5aa;
+    margin: 10px auto;
+    border-radius: 5px;
+
+    /* Edició de la línia de decoració */ 
+}
+.header-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+     /* Tamany del text "UNIQO CLOTHINT X JORJE PELAYO" */
+}
+.ctn {
+    padding: 8px 15px;
+    background: #a68a64;
+    border-radius: 30px;
+
+    /* Edició dels apartats linkables de la web: el menu de navegació i els "learn more" */
+}
+
+.menu-btn,.close-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+
+     /* Edició del pictogrma de menu lateral i "X": tamany, posició, cursor, ... */
+}
+
+/* SEGON CONTINGUT DE LA WEB*/
+
+section {
+    width: 80%;
+    margin: 80px auto;
+
+    /* Cració del espai del segon contingut de la web: amplitud i el marge d'aquesta */
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 4vmin;
+    color: #002e0f;
+    margin-bottom: 50px;
+
+    /* Edició del títol d'aquesta secció: "Clothing"*/
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    /* Edició del poscionament i maquetació d'aquest contingut */
+}
+.row .col  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Edició del poscionament i maquetació d'aquest contingut */
+}
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vmin;
+    color: #002e0f;
+    margin: 20px auto;
+
+     /* Edició del subtítols: "T-Shirt" i "Hoodies and SweatShirts" */
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #7c7c7c;
+    padding: 0px 40px;
+    
+    /* Edició del text */
+}
+.fc .ctn {
+    margin-top: 30px;
+
+    /* Creació de marges per botó linkable */
+}
+
+/* TERCER CONTINGUT DE LA WEB*/
+
+.fc {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/bg2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    /* Edició d'aquest apartat, aquest se basa a partir d'una imatge de fons */
+}
+.fc-content {
+    margin: auto;
+    width: 60%;
+    padding: 50px;
+    color: #eee2df;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    /* Edició del títol d'aquesta secció */
+}
+.fc-content h6 {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vmin;
+
+    /* Tamany del títol */
+}
+.fc-content .line{
+    margin-bottom: 50px;
+
+    /* Edició de la línia de decoració */
+}
+.fc-content p {
+    text-align: right;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(221, 221, 221);
+
+    /* Color del text d'aquesta secció */
+}
+.fc-content .ctn {
+    margin-top: 40px;
+
+    /* Edició de l'element linkable */
+}
+.fc .costado {
+    margin-left: 5%;
+}
+.fc .costado p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+/* QUART CONTINGUT DE LA WEB*/
+
+.content-col {
+    width: 40%;
+
+    /* Edició del contigut d'aquesta secció, hem poscionat les imatges amb dues columnes */
+}
+.image-col {
+    width: 60%;
+    /* Edició del contingut*/
+}
+.gs .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: left;
+
+    /* Tractament de les posicions relatives de les imatges*/
+}
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+
+    /* Marge entre les imatges*/
+}
+.content-col h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vmin;
+    color: #002e0f;
+    margin-left: -230px;
+
+    /* Edició del títol d'aquesta secció */
+}
+.content-col .line {
+    margin-left: -10px;
+
+    /* Edició de la línia de decoració */
+    
+}
+.content-col p {
+    padding: 0;
+    margin: 20px auto;
+
+    /* Creació de marge entre aquestos */
+
+}
+.content-col .ctn {
+    margin-left: -100px;
+
+    /* Edició de l'element linkable */
+}
+
+/* PEU DE PÀGINA DE LA WEB*/
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #a68a64;
+    text-align: center;
+
+    /* Creació de la secció footer amb les seves propietats */
+}
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    margin: 20px auto;
+
+    /* Text del footer: propietats com color i marge  */
+}
+
+
+/* ESTRUCTURA PER A TELÈFON MÒBIL, amb les seves respectives dimensions i paràmetres */
+@media only screen and (max-width:850px){
+    .menu-btn {
+        margin-top: 10%;
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        margin-top: 1%;
+        left: 30px;
+        width: 100px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: linear-gradient(#697B6F,#747D7C);
+        margin-top: -1400px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    /* Events */
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+    /* explore */
+    .explore-content {
+        width: 100%;
+    }
+    .gs .col {
+        width: 100%;
+    }
+    
+    .content-col h5 {
+        margin-left: -160px;
+    }
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img {
+        width: 90%;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* ESTRUCTURA PER A TABLET, amb les seves respectives dimensions i paràmetres */
+
+@media only screen and (max-width:1000px){
+    .tablet-btn {
+        margin-top: 32px;
+        display: block;
+    }
+    .tabletNavbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        margin-top: 60px;
+        left: 30px;
+        width: 100px;
+    }
+    .tabletNav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: linear-gradient(#697B6F,#747D7C);
+        margin-top: -1400px;
+        transition: all 0.5s ease;
+    }
+    .tablet-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .tabletNav-links li {
+        margin: 30px auto;
+    }
+    
+    /* Events */
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+    /* explore */
+    .explore-content {
+        width: 100%;
+    }
+    .gs .col {
+        width: 100%;
+    }
+    .content-col h5 {
+        margin-left: -200px;
+    }
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img {
+        width: 90%;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
+
+/* ASPETCES DINÀMICS DINS DE LA WEB */
+img {
+    transition: transform .3s ease;
+
+    /* Per a quan la mida de la web cambie per a telèfon mòbil, hi ha una animació alhora d'interactuar amb les barres del menu  */
+}
+img:hover {
+    transform: scale(1.1);
+
+    /* hover que transforma la mida de les imatges en el cas que el cursor passe per damunt */
+}
+.ctn:hover {
+    background: #52796f;
+    box-shadow: 2px 2px 5px #00000056;
+
+    /* hover per al menu i els botons linkables, aquest hover actua sobre el color en el cas que el cursos passe per damunt*/
+}

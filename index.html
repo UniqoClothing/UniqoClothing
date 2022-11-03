@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIQO CLOTHING</title>
+    <!-- el html esta linkat al css-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="img/iconoLogo.png">
+</head>
+<body>
+    <main aria-label="contenido de la pagina">
+    <!-- BARRA DE NAVEGACIÓ DE LA WEB -->
+    <nav class="navbar">
+        <img src="img/iconoLogo.png" alt="" class="logo"> 
+        <ul class="nav-links">
+            <li class="ctn"><a style="color: white;" href="">Inicio</a></li>
+            <li class="ctn"><a style="color: white;" href="#clothing">Clothing</a></li>
+            <li class="ctn"><a style="color: white;" href="#fs">Fall Collection</a></li>
+            <li class="ctn"><a style="color: white;" href="#gs">Great Stories</a></li>
+            <li class="ctn"><a style="color: white;" href="https://www.iberdrola.com/sostenibilidad/contra-cambio-climatico/concienciacion-medioambiental">Awareness</a></li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        <span class="close-btn">X</span>
+       </div>
+    </nav>
+
+<!-- PRIMER CONTINGUT DE LA WEB, introducció 'UNIQO CLOTHING' -->
+
+    <header aria-label="cabecera de la pagina">
+        <div class="header-content">
+            <h3>Little Changes Can Save Our World</h3>
+            <div class="line"></div>
+            <h2>UNIQO CLOTHING x JORGE PELAYO</h2>
+            <a style="color: white;" href="" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+<!-- SEGON APARTAT DE LA WEB, "Clothing" -->
+    <section class="clothing">
+        <a id="clothing"></a>
+        <div class="title">
+            <h1>Clothing</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.png" alt="">
+                <h4>T-Shirts</h4>
+                <p>Uniqo T-shirts are 100% recycled and recyclable, made by local producers in Spain</p>
+                <a style="color: white;" href="" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img/img2.png" alt="">
+                <h4>Hoodies & Sweatshirts</h4>
+                <p>Uniqo Hoodies & Sweatshirts are 100% recycled and recyclable, made by local producers in Spain</p>
+                <a style="color: white;" href="" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+<!-- TERCER APARTAT DE LA WEB, "Fall Collection" -->
+
+    <section class="fc" id="fs">
+        <aside class="costado">
+            <p>Enjoy the present and care about the future...
+            </p>
+        </aside>
+      <div class="fc-content">
+        <h6>Fall Collection</h6>
+        <div class="line"></div>        
+      </div>
+    </section>
+
+<!-- QUART APARTAT DE LA WEB, "GREAT STORIES" -->
+
+    <section class="gs" id="gs">
+        <div class="row">
+            <div class="col content-col">
+                <h5>Great Stories</h5>
+                <div class="line"></div>
+                <p>We share the stories that inspire us to continue working and that motivate us to achieve a better world.</p>
+                <a style="color: white;" href="https://es.greenpeace.org/es/quienes-somos/victorias-de-greenpeace/" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery" >
+                    <img src="./img/img3.png" alt="">
+                    <img src="./img/img4.png" alt="">
+                    <img src="./img/img5.png" alt="">
+                    <img src="./img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- PEU DE PÀGINA DE LA WEB amb el seu contingut -->
+
+    <footer class="footer" aria-label="pie de la pagina">
+        
+        <p>Lleida, Catalunya, España - Contact 123456789 - E-Mail uniqoclothing@example.com</p>
+        <p>Copyright © 2022 Uniqo Clothing</p>
+        
+</footer>
+
+<!-- Constants locals -->
+<!-- Creació d'una estrcuctura condicional per al menu despelgable, que en el cas que s'interactue amb la icona del menu, 
+llavors s'obrirà aquesta navegació i en el cas que s'interactue amb la 'X', s'hi tancara aquesta navegació desplegable -->
+
+<!-- PARÀMETRES MÒBIL -->
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+
+
+<!-- PARÀMETRES TABLET -->
+<script>
+    const tabletNav = document.querySelector('.tablet-nav')
+    const tabletBtn = document.querySelector('.tablet-btn')
+    const tabletNavlinks = document.querySelector('.tabletNav-links')
+    const tabletCloseBtn = document.querySelector('.tabletClose-btn')
+
+    tabletNav.addEventListener('click',(e)=>{
+        tabletNavlinks.classList.toggle('tablet-menu')
+        if(e.target === menuBtn){
+            tabletBtn.replaceWith(tabletCloseBtn)
+            tabletCloseBtn.style.display = 'block'
+        }
+        if(e.target === tabletCloseBtn){
+            tabletCloseBtn.replaceWith(tabletBtn)
+        }
+    })
+</script>
+</main>
+</body>
+</html>
